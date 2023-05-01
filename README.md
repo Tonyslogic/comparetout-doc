@@ -64,7 +64,10 @@ The DAILY DETAILS tab will also be populated when the simulation is complete. Yo
 A usage must be saved with a unique name before adding any usage area. Newly created usage will be in edit mode already. 
 
 #### Load Profile
-Load profiles are the only mandatory usage area. A load profile consists of some basic usage data and three distributions.
+Load profiles are the only mandatory usage area. 
+
+A load profile consists of some basic usage data and three distributions.
+
 ![LoadProfileOverview](./images/LoadProfileOverview.png)
 
 Distributions show how electricity usage is spread across hours, days, months. This accounts for habit and seasonal variations. Each distribution totals 100% of andual usage.
@@ -72,6 +75,7 @@ Distributions show how electricity usage is spread across hours, days, months. T
 ![HourlyDistribution](./images/HourlyDistribution.png)
 
 When you edit a load profile, you can import from a file, copy from or link to a load profile defined in another usage.
+
 ![ImportLinkCopy](./images/LoadProfileLinkCopyImport.png)
 
 Linking or copying will show a list of usages that can be used as source.
@@ -91,10 +95,49 @@ More load profile sources will be added in later versions of the app. For now a 
 ![EditDistribution](./images/EditDistribution.png)
 
 #### Inverters
+Inverters are key components in how solar/battery systems are connected to you house. They are not perfect, energy is lost (in the form of heat) whenever a DC <-> AC conversion happens.
+
+This area captures the key characteristics of an inverter, capacity and losses for the various conversions, the number of ports (for solar panels) and the minimum excess required before battery charging will happen.
+
+All of this information should be abailable from the manufacturer specification. A food round trip estimation for loss is 20%.
+
+Inverter names need to be unique within a usage. The inverter name is used to connect panels and batteries to the house.
+
+![InverterOverview](./images/InverterOveriew.png)
+
+When editing, you can import, copy, link delete and add an inverter.
+
+![InverterOperations](./images/InverterOperations.png)
+![Add](./images/AddFAB.png)
+
+Multiple hybrid string inverters are quite tricky in the real world. Please get professional advise before have more than one inverter attached to you home.
+
 #### Solar Panels
+Solar panels are connected to inveter ports (MPPT -- Maximum Power Point Tracking). To distinguish different strings a name is needed. The number of panels in a string and the maximim power output is needed. When a panel (string) is fully configured the monthly generation is shown at the bottom of the screen.
+
+![PanelOverview](./images/PanelOverview.png)
+
+Editing panels allows for import, copy, link, add, delete, and fetching data
+
+![PanelOperations](./images/PanelOperations.png)
+![Add](./images/AddFAB.png)
+
+If the monthly generation is missing from the bottom of the screen, or you would like to refresh it, you can fetch/update data. For now only a single data source is supported. Later version of the app will add more.
+
+![PVGIS](./images/PVGISGrabber.png)
+
+The information on this screen is stored on you device. Location data can be refreshed using the current location on your device (if available/permitted). The data is used to query the PVGIS database. Data downloaded from PVGIS is stored as-is in your downloads folder. Relevant data is extracted from this file and added to the apps internal DB.
+
+Deleting the panel will remove all of this data from the device.
+
 #### Batteries
+##### Battery configuration
+##### Battery charging from grid schedule
+Load shifting (scheduled charging the battery from the grid) will be added in a later varsion of the app.
 #### Hot water
+Hot water systems will be added in a later version of the app.
 #### Electric Vehicle
+Electriv vehicles will be added in a later version of the app.
 
 ## Cost
 
