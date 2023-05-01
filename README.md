@@ -99,7 +99,7 @@ Inverters are key components in how solar/battery systems are connected to you h
 
 This area captures the key characteristics of an inverter, capacity and losses for the various conversions, the number of ports (for solar panels) and the minimum excess required before battery charging will happen.
 
-All of this information should be abailable from the manufacturer specification. A food round trip estimation for loss is 20%.
+All of this information should be abailable from the manufacturer specification. A good round trip estimation for loss is 20%.
 
 Inverter names need to be unique within a usage. The inverter name is used to connect panels and batteries to the house.
 
@@ -110,7 +110,7 @@ When editing, you can import, copy, link delete and add an inverter.
 ![InverterOperations](./images/InverterOperations.png)
 ![Add](./images/AddFAB.png)
 
-Multiple hybrid string inverters are quite tricky in the real world. Please get professional advise before have more than one inverter attached to you home.
+Multiple hybrid string inverters are quite tricky in the real world. Please get professional advice before having more than one inverter attached to you home.
 
 #### Solar Panels
 Solar panels are connected to inveter ports (MPPT -- Maximum Power Point Tracking). To distinguish different strings a name is needed. The number of panels in a string and the maximim power output is needed. When a panel (string) is fully configured the monthly generation is shown at the bottom of the screen.
@@ -200,4 +200,22 @@ Rows can be added and deleted. The first row will always be from 0, and the last
 
 ## Compare
 
-## General navigation
+All selected costs are applied to all selected usages. The combined selection is visible in the comparison tab.
+
+![ComparisonPortrait](./images/ComparePortrait.png)
+
+With long names, this can be a bit cramped. You can show less columns, or rotate the device to landscape.
+
+![ComparisonLandscape](./images/CompareLandscape.png)
+
+For longer lists, the table may be sorted.
+
+Clicking on a row provides a pie chart that shows the percentage of purchased electricity at each price point in the price plan.
+
+![ComparePie](./images/ComparePie.png)
+
+## Warning
+This software is in development. There are still far too many crashes. 
+
+It should be used only to provide an estimate indication of comparative cost.
+The software comes with absolutely no guarantees. 
