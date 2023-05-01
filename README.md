@@ -163,6 +163,40 @@ Hot water systems will be added in a later version of the app.
 Electriv vehicles will be added in a later version of the app.
 
 ## Cost
+As mentioned above, costs can be added by loading from a file, downloading or creating. Suppliers typically refer to these as price plans -- both terms are used here.
+
+When you first create a cost (price plan), it is not valid. This is indicated by the red banner at the top.
+
+![NewPricePlan](./images/PricePlanNew.png)
+
+Clicking the (i) info icon will provide a short explanantion. It is not possible to save an invalid price plan.
+
+![InvalidPricePlan](./images/PricePlanInvalid.png)
+
+The main tab of a price plan captures basic information about the plan:
+* Supplier
+* Plan name
+* Export price
+* Fixed charges
+* Welcome discounts
+* Last update (plans change requently, always check details before making decisions)
+* Reference (where the information came from)
+
+Price plans do not cover all terms and conditions. Please check the detail and correctness  of a plan before signing up!
+
+Editing a price plan also allows the addition and removal of day rates.
+
+![PricePlanOperations](./images/PricePlanEdit.png)
+
+Adding a day rate makes the price plan valid. It can be saved and shared. A new tab is also added for each day rate.
+
+![PricePlanOK](./images/PricePlanOK.png)
+
+Day rates capture the cost of electricity by hour, day of week and date. Every date in the year, day of the week and hour of the day needs to have a cost. Additional day rates are needed for price plans that vary by weekday or calendar date. In this example, a second day rate is needed to capture the price of electricity on Saturday.
+
+![DayRate](./images/DayRate.png)
+
+Rows can be added and deleted. The first row will always be from 0, and the last to 24.
 
 ## Compare
 
