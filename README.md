@@ -131,7 +131,30 @@ The information on this screen is stored on you device. Location data can be ref
 Deleting the panel will remove all of this data from the device.
 
 #### Batteries
+
+Batteries may be configured and scheduled for charging. Clicking on the battery image will open a menu.
+
+![BatteryMenu](./images/BatteryMenu.png)
+
 ##### Battery configuration
+
+Battery configuration associates a battery with one of the inverters defined above. Some vital statistics are also needed to simulate correctly.
+* How big is the battery
+* At what percentage should discharge be stopped
+* How much can the battery provide in 5 minutes
+* How much can the battery charge in 5 minutes
+* How much energy is lost by storing in the battery
+
+![BatteryOverview](./images/BatteryOverview.png)
+
+Batteries (really battery management systems) try to protect themselves. When they are completely depeleted or nearly full, the charge rate drops. The app uses a simple model that reduces the maximum charge rate to a percentage based on the state of charge.
+
+Editing the battery allows for import, copy, link add and delete.
+
+![BatteryOperations](./images/BatteryOperations.png)
+![Add](./images/AddFAB.png)
+
+
 ##### Battery charging from grid schedule
 Load shifting (scheduled charging the battery from the grid) will be added in a later varsion of the app.
 #### Hot water
