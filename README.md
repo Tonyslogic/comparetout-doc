@@ -20,7 +20,7 @@ For usage and cost, you can:
 * Load from file
 * Download from the internet
 * Share with others
-* Create a new (Usage or Cost)
+* Create a new entry
 
 Once usage and costs have defined (loaded, downloaded, or created)
 ![DefinedUsage](./images/DefinedUsage.png)
@@ -60,11 +60,36 @@ Once the mandatory areas are configured, the app will automatically simulate usa
 
 The DAILY DETAILS tab will also be populated when the simulation is complete. You can navigate the simulation output to get an insight into why the costs are the way they are.
 ![DailyDetails](./images/DailyDetails.png)
-### Usage details
+### Usage area details
 A usage must be saved with a unique name before adding any usage area. Newly created usage will be in edit mode already. 
 
 #### Load Profile
-Load profiles are the only mandatory usage area.
+Load profiles are the only mandatory usage area. A load profile consists of some basic usage data and three distributions.
+![LoadProfileOverview](./images/LoadProfileOverview.png)
+
+Distributions show how electricity usage is spread across hours, days, months. This accounts for habit and seasonal variations. Each distribution totals 100% of andual usage.
+
+![HourlyDistribution](./images/HourlyDistribution.png)
+
+When you edit a load profile, you can import from a file, copy from or link to a load profile defined in another usage.
+![ImportLinkCopy](./images/LoadProfileLinkCopyImport.png)
+
+Linking or copying will show a list of usages that can be used as source.
+
+![LinkDialog](./images/LinkDialog.png)
+
+When usage areas are linked, a link icon appears in the bottom left of the screen. Clicking on this icon will show a list of the usages that are linked.
+
+![LinkIcon](./images/LinkIcon.png)
+
+In edit mode, it is also possible to select a standard load profile. Standard load profiles are published annually by ESBN. These are from Nov 2022.
+
+![StandardLoadProfile](./images/LoadProfileSource.png)
+
+More load profile sources will be added in later versions of the app. For now a simple editor is provided if the standard load profiles do not satisfy.
+
+![EditDistribution](./images/EditDistribution.png)
+
 #### Inverters
 #### Solar Panels
 #### Batteries
