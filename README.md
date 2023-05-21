@@ -50,6 +50,8 @@ The button images in the view/edit usage correspond to the usage areas above. A 
 
 The green icons on the battery, hot water and EV indicate that settings, schedules and diversions have been configured (or not, shaded icons).
 
+The orange sun on the panels lets you know that PV data is associated with the solar panels.
+
 Once the mandatory areas are configured, the app will automatically simulate usage and generate costs (at least one cost must be defined) for a single year. When simulation is complete some key overview indicators are provided.
 
 ![KeyIndicators](./images/KeyIndicators.png)
@@ -58,7 +60,7 @@ Once the mandatory areas are configured, the app will automatically simulate usa
 * The amount of generated electricity (if applicable) used and exported
 * The amount of used electricity that was purchased and generated
 
-The DAILY DETAILS tab will also be populated when the simulation is complete. You can navigate the simulation output to get an insight into why the costs are the way they are.
+The DAILY DETAILS, MONTHLY ROLLUP and YEAR SUMMARY tabs will also be populated when the simulation is complete. You can navigate the simulation output to get an insight into why the costs are the way they are.
 ![DailyDetails](./images/DailyDetails.png)
 ### Usage area details
 A usage must be saved with a unique name before adding any usage area. Newly created usage will be in edit mode already. 
@@ -113,7 +115,7 @@ When editing, you can import, copy, link delete and add an inverter.
 Multiple hybrid string inverters are quite tricky in the real world. Please get professional advice before having more than one inverter attached to you home.
 
 #### Solar Panels
-Solar panels are connected to inveter ports (MPPT -- Maximum Power Point Tracking). To distinguish different strings a name is needed. The number of panels in a string and the maximim power output is needed. When a panel (string) is fully configured the monthly generation is shown at the bottom of the screen.
+Solar panels are connected to inveter ports (MPPT -- Maximum Power Point Tracking). To distinguish different strings a name is needed. The number of panels in a string and the maximim power output is needed. When a panel (string) is fully configured the monthly generation is shown at the bottom of the screen. A usage with panels, but no generation data is not eligible for comparison.
 
 ![PanelOverview](./images/PanelOverview.png)
 
@@ -155,8 +157,15 @@ Editing the battery allows for import, copy, link add and delete.
 ![Add](./images/AddFAB.png)
 
 
-##### Battery charging from grid schedule
-Load shifting (scheduled charging the battery from the grid) will be added in a later varsion of the app.
+##### Scheduling battery charging from grid (Purchase shifting)
+Purchase shifting (scheduled charging of the battery from the grid) can make a huge difference to the annual cost, and repayment time -- if there is a big difference between hourly rates.
+
+![BatterySchedule](./images/BatteryCharging.png)
+
+Battery charging schedules must be associated with an inverter. You may have several batteries associated with an inverter, they will all be charged/discharged together.
+
+Charging schedules are applied on a day-of-week and month-of-year basis. New schedules can be created using the + button (when editing). On any given day multiple charging sessions can be defined. Each session includes a maximum charge point. All batteries associated with an inverter will not service house load during a charging session, even if the maximum has been achieved.
+
 #### Hot water
 Hot water systems will be added in a later version of the app.
 #### Electric Vehicle
