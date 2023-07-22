@@ -2,6 +2,12 @@
 This page describes the android app "Compare Time Of Use Tariffs".
 
 ![App icon](./images/ic_launcher.png)
+ 
+To join the beta-testing from android you can : 
+
+[![GetIt](./images/getItOnGooglePlay.png)](https://play.google.com/store/apps/details?id=com.tfcode.comparetout)
+
+Or you can join from a browser [here](https://play.google.com/apps/testing/com.tfcode.comparetout). 
 
 ## Purpose
 The app compares electricity time of use tariffs with data that you provide to get a realistic estimate of expected annual charges.
@@ -50,7 +56,7 @@ The button images in the view/edit usage correspond to the usage areas above. A 
 
 The green icons on the battery, hot water and EV indicate that settings, schedules and diversions have been configured (or not, shaded icons).
 
-The orange sun on the panels lets you know that PV data is associated with the solar panels.
+The orange sun on the panels lets you know that PV data is associated with the solar panels. Without the sun, the simulation will not run!
 
 Once the mandatory areas are configured, the app will automatically simulate usage and generate costs (at least one cost must be defined) for a single year. When simulation is complete some key overview indicators are provided.
 
@@ -68,7 +74,7 @@ A usage must be saved with a unique name before adding any usage area. Newly cre
 #### Load Profile
 Load profiles are the only mandatory usage area. 
 
-A load profile consists of some basic usage data and three distributions.
+A load profile consists of some basic usage data and three distributions. The app allows you to use standard load profiles (STANDARD LOAD PROFILE), generate a load profile from an ESBN HDF file (ESBN HDF FILE), or create manually based on your understanding of your usage (CUSTOM).
 
 ![LoadProfileOverview](./images/LoadProfileOverview.png)
 
@@ -167,9 +173,9 @@ Battery charging schedules must be associated with an inverter. You may have sev
 Charging schedules are applied on a day-of-week and month-of-year basis. New schedules can be created using the + button (when editing). On any given day multiple charging sessions can be defined. Each session includes a maximum charge point. All batteries associated with an inverter will not service house load during a charging session, even if the maximum has been achieved.
 
 #### Hot water
-Hot water systems will be added in a later version of the app.
+Hot water systems will be described later.
 #### Electric Vehicle
-Electriv vehicles will be added in a later version of the app.
+Electriv vehicles will be described later.
 
 ## Cost
 As mentioned above, costs can be added by loading from a file, downloading or creating. Suppliers typically refer to these as price plans -- both terms are used here.
