@@ -14,6 +14,9 @@ The app compares electricity time of use tariffs with data that you provide to g
 
 Time of use tariffs are complex, and the app aims to simplify the process of gathering information and calculating figures useful for comparison.
 
+### Getting started
+A quick start guide video is available on [YouTube](https://youtu.be/vUdPhGrInnM)
+
 ## Top level concepts
 There are three main tabs in the app. Usage, Costs and Comparisons.
 
