@@ -1,13 +1,11 @@
 # comparetout-doc
-This page describes the android app "Compare Time Of Use Tariffs".
+This page describes the android app "Eco Power Optimisr".
 
 ![App icon](./images/ic_launcher.png)
  
-To join the beta-testing from android you can : 
+To install on android you can : 
 
 [![GetIt](./images/getItOnGooglePlay.png)](https://play.google.com/store/apps/details?id=com.tfcode.comparetout)
-
-Or you can join from a browser [here](https://play.google.com/apps/testing/com.tfcode.comparetout). 
 
 ## Purpose
 The app compares electricity time of use tariffs with data that you provide to get a realistic estimate of expected annual charges.
